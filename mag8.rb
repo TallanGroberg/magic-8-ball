@@ -56,9 +56,9 @@ end
 #2
 def make_answer
   puts "make a new answer"
-  @new_answer = gets
-  @new_answer << @answer
-  # if_there
+  # @new_answer = gets
+  # @new_answer << @answer
+  if_there
   puts "your new answers are #{display}"
   
   menu
@@ -83,7 +83,7 @@ def thinking
 end
 
 def if_there
-  if @new_answers.frequency == @answer.frequency 
+  if @new_answers == @answer 
     binding.pry
     puts "already an answer"
   else 
